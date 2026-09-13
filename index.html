@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Tus Tres Palabras</title>
 </head>
 <body>
-    <h1>Hola Vic te re amo vic</h1>
+    <figure class="w-100"><img class="img-fluid w-75 d-block mx-auto" src="image/logo.jpeg" alt=""></figure>
+    <section>
+        <h1 class="text-center">Que empiece el juego</h1>
+        <form action="" method="post" class="d-flex flex-column text-center w-75 mx-auto" id="playerForm">
+            <label for="playerName" class="form-label">Ingresa el nombre de los jugadores</label>
+            <input type="number" id="playerName" class="form-control mb-2" placeholder="Nombre del Jugador">
+            <button type="submit" class="btn border border-dark w-50 mx-auto">Registrar</button>
+        </form>
+        <section id="playerContainer"></section>
+
+    </section>
+    
+    <script src="js/script.js"></script>
     <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
