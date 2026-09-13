@@ -1,17 +1,26 @@
-body{
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
     background-color: #f9f8e6;
 }
-h1{
+
+h1 {
     color: #000033;
 }
-button{
+
+button {
     background-color: #ffa550 !important;
 }
-.card{
+
+.card {
     transition: opacity 0.5s ease;
     opacity: 0;
 }
-#registrationSection{
+
+#registrationSection {
     transition: opacity 0.5s ease;
     opacity: 1;
 }
