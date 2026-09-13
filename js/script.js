@@ -117,7 +117,7 @@ function renderPlayers() {
     players.forEach((player) => {
         const textColor = getContrastTextColor(player.color);
         const card = document.createElement('section');
-        card.className = 'card my-2 w-75 mx-auto';
+        card.className = 'card my-2 w-50 mx-auto';
         card.style.backgroundColor = player.color;
         card.style.boxShadow = 'inset 0 0 0 5px rgba(0, 0, 0, 0.4)';
         card.style.borderRadius = '15px';

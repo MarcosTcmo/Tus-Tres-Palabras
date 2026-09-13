@@ -10,21 +10,26 @@
 </head>
 
 <body>
-    <figure class="w-100"><img class="img-fluid w-75 d-block mx-auto" src="image/logo.jpeg" alt=""></figure>
-    <section id="registrationSection">
-        <h1 class="text-center">Que empiece el juego</h1>
-        <form action="" method="post" class="d-flex flex-column text-center w-75 mx-auto" id="playerForm">
-            <label for="playerName" class="form-label">Ingresa el nombre de los jugadores</label>
-            <input type="text" id="playerName" class="form-control mb-2" placeholder="Nombre del Jugador">
-            <button type="submit" class="btn border border-dark w-50 mx-auto mb-1">Registrar</button>
-        </form>
-        <section id="playerContainer"></section>
-        <button id="buttonStart" class="btn border border-dark d-block mx-auto">comenzar Juego</button>
-    </section>
-    <section id="playersContainerGame">
-
-    </section>
-
+    <header>
+        <figure class="w-100"><img class="img-fluid w-50 d-block mx-auto" src="image/logo.jpeg" alt=""></figure>
+    </header>
+    <main class=" container">
+        <section id="registrationSection">
+            <h1 class="text-center">Que empiece el juego</h1>
+            <form action="" method="post" class="d-flex flex-column align-items-center text-center w-75 mx-auto" id="playerForm">
+                <label for="playerName" class="form-label">Ingresa el nombre de los jugadores</label>
+                <input type="text" id="playerName" class="w-75 form-control mb-2" placeholder="Nombre del Jugador">
+                <button type="submit" class="btn border border-dark w-50 mx-auto mb-1">Registrar</button>
+            </form>
+            <section id="playerContainer"></section>
+            <button id="buttonStart" class="btn border border-dark d-block mx-auto">comenzar Juego</button>
+        </section>
+        <section id="playersContainerGame">
+        </section>
+    </main>
+    <footer class="container-fluid mt-4 d-flex flex-column justify-content-center  bg-dark text-center" style="height: 14vh;">
+        <p class="m-0 text-white">©Ramirez Marcos Elias</p>
+    </footer>
     <script src="js/script.js"></script>
     <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
 </body>
