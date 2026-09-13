@@ -10,14 +10,14 @@ const gameCategories = {
     'Cabeza Y pingo', 'Guaso', 'Villero', 'Quien Se Paga La coca', 'Pingo', 'Cajeta', 
     'ure', 'conchuda', 'tonto culiao', 'boludo', 'Saltamuro', 'Empanada de pollo', 
     'Viento norte', 'Achilata', 'Sanguuche de milanesa', 'cornudo', 'Pata de lana', 
-    'Chanchuyo', 'panchuque', 'Panchero', 'panchitos', 'Meta y ponga','zorrita gratis'
+    'Chanchuyo', 'panchuque', 'Panchero', 'panchitos', 'Meta y ponga', 'zorrita gratis'
   ],
   anime: [
     'Esferas del Dragón', 'Radar del Dragón', 'Semilla del Ermitaño', 'Nube Voladora', 
     'Cápsula', 'Banda de Konoha', 'Kyuubi', 'Sharingan', 'Kunai', 'Rasengan', 
     'Death Note', 'Fruta del Diablo', 'Going Merry', 'Shichibukai', 'Sombrero de Paja', 
     'expansion de dominio', 'Dedo de Sukuna', 'oh pero claro megumi', 'Caja de Nezuko', 'Equipo de Maniobras Tridimensional ahre', 
-    'Suero de Titán', 'Sube al EVA', 'ataca al titan', 'Levi', 'Pokébola','Stand', 'dead nothe', 'manzana', 'L', 'kira'
+    'Suero de Titán', 'Sube al EVA', 'ataca al titan', 'Levi', 'Pokébola', 'Stand', 'dead nothe', 'manzana', 'L', 'kira'
   ],
   sports: [
     'Pelota de fútbol', 'Red', 'Tarjeta roja', 'Tarjeta amarilla', 'Silbato', 
@@ -186,25 +186,26 @@ function renderGameCards() {
   const textColor = getContrastTextColor(lighterColor);
 
   const card = document.createElement('section');
-  card.className = 'card mb-3 w-75 mx-auto p-3 shadow-lg';
+  card.className = 'card mb-3 w-75 mx-auto p-4 shadow-lg';
   card.style.backgroundColor = player.color;
   card.style.boxShadow = 'inset 0 0 0 5px rgba(0, 0, 0, 0.2)';
   card.style.borderRadius = '20px';
   card.style.transition = 'opacity 0.5s ease';
   card.style.opacity = '0';
+  card.style.minHeight = '420px';
 
   card.innerHTML = `
-    <section class="card-body">
-      <section class="p-3 mb-4 rounded text-center" style="background-color: ${lighterColor}; box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);">
+    <section class="card-body d-flex flex-column justify-content-between h-100">
+      <section class="p-3 mb-3 rounded text-center" style="background-color: ${lighterColor}; box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);">
         <h3 class="card-title m-0" style="color: ${textColor}; ${textColor === '#ffffff' ? 'text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;' : ''}">
           ${player.name}
         </h3>
       </section>
       
-      <section class="d-flex justify-content-between mb-4 gap-2">
-        <section class="secret-box p-3 rounded text-center flex-fill font-weight-bold d-flex align-items-center justify-content-center" style="background-color: ${lighterColor}; font-size: 1.1rem; color: ${textColor}; min-height: 60px;">???</section>
-        <section class="secret-box p-3 rounded text-center flex-fill font-weight-bold d-flex align-items-center justify-content-center" style="background-color: ${lighterColor}; font-size: 1.1rem; color: ${textColor}; min-height: 60px;">???</section>
-        <section class="secret-box p-3 rounded text-center flex-fill font-weight-bold d-flex align-items-center justify-content-center" style="background-color: ${lighterColor}; font-size: 1.1rem; color: ${textColor}; min-height: 60px;">???</section>
+      <section class="d-flex flex-column gap-2 mb-4">
+        <section class="secret-box p-3 rounded text-center font-weight-bold d-flex align-items-center justify-content-center" style="background-color: ${lighterColor}; font-size: 1.1rem; color: ${textColor}; min-height: 55px; word-break: break-word;">???</section>
+        <section class="secret-box p-3 rounded text-center font-weight-bold d-flex align-items-center justify-content-center" style="background-color: ${lighterColor}; font-size: 1.1rem; color: ${textColor}; min-height: 55px; word-break: break-word;">???</section>
+        <section class="secret-box p-3 rounded text-center font-weight-bold d-flex align-items-center justify-content-center" style="background-color: ${lighterColor}; font-size: 1.1rem; color: ${textColor}; min-height: 55px; word-break: break-word;">???</section>
       </section>
 
       <section class="d-flex justify-content-between">
